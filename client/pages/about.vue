@@ -2,7 +2,10 @@
 <div>
     <h1>index</h1>
     <ul class="user-list">
-        <li v-for="(user, i) in users" :key="i">
+        <li
+            v-for="(user, i) in users"
+            :key="i"
+        >
             <span>{{ user.name }}</span>
         </li>
     </ul>
@@ -10,23 +13,17 @@
 </template>
 
 <script lang="ts">
-// import { Component, Vue } from "nuxt-property-decorator";
-import Vue from "vue";
+import { Component, Vue } from "nuxt-property-decorator";
 import { User } from "@common/UserInterface";
 
-export default Vue.extend({
-    data() {
-        return {
-            users: [] as User[],
-        };
-    },
+@Component
+export default class YourComponent extends Vue {
+    users: User[] = [];
+
     async fetch(): Promise<void> {
         this.users = (await this.$axios.get("users"))?.data ?? [];
-    },
-    head: {
-        title: "Index",
-    },
-});
+    }
+}
 </script>
 
 <style lang="scss">

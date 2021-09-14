@@ -5,7 +5,11 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
     "esModuleInterop": true,
     "importHelpers": true,
     "allowJs": true,
@@ -15,11 +19,24 @@
     "baseUrl": "../",
     "rootDir": "../",
     "paths": {
-      "~/*": ["./client/*"],
-      "@client/*": ["./client/*"],
-      "@common/*": ["./common/*"],
-      "@server/*": ["./server/*"]
+      "~/*": [
+        "./client/*"
+      ],
+      "@client/*": [
+        "./client/*"
+      ],
+      "@common/*": [
+        "./common/*"
+      ],
+      "@server/*": [
+        "./server/*"
+      ]
     },
-    "types": ["@types/node", "@nuxt/types", "@nuxtjs/axios"]
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/axios",
+      "@nuxtjs/auth-next",
+    ]
   }
 }
