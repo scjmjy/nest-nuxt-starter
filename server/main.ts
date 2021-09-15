@@ -1,26 +1,27 @@
-import {Logger} from '@nestjs/common';
-import {NestFactory} from '@nestjs/core';
+import { Logger } from "@nestjs/common";
+import { NestFactory } from "@nestjs/core";
 
-import {FastifyAdapter, NestFastifyApplication} from '@nestjs/platform-fastify';
-import config from '../nuxt.config';
+import { FastifyAdapter, NestFastifyApplication } from "@nestjs/platform-fastify";
+import config from "../nuxt.config";
 
-import {ApplicationModule} from './application.module';
-import {NuxtServer} from './nuxt';
-import {NuxtFastifyFilter} from './nuxt/nuxtFastify.filter';
+import { ApplicationModule } from "./application.module";
+import { NuxtServer } from "./nuxt";
+import { NuxtFastifyFilter } from "./nuxt/nuxtFastify.filter";
 
 // import { NuxtExpressFilter } from './nuxt/nuxtExpress.filter';
 
-const log = new Logger('Bootstrap');
+const log = new Logger("Bootstrap");
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare const module: any;
 
 (async function bootstrap() {
     try {
         const shouldBuild = config.dev ? module.hot._main : false;
         const nuxt = await NuxtServer.getInstance().run(shouldBuild);
-        const fastify = new FastifyAdapter()
+        const fastify = new FastifyAdapter();
 
-        const app = await NestFactory.create<NestFastifyApplication>(ApplicationModule, fastify, {bufferLogs: true});
+        const app = await NestFactory.create<NestFastifyApplication>(ApplicationModule, fastify, { bufferLogs: true });
         app.useGlobalFilters(new NuxtFastifyFilter(nuxt));
 
         // const app = await NestFactory.create(ApplicationModule);
@@ -29,15 +30,12 @@ declare const module: any;
         app.useLogger(log);
         app.enableShutdownHooks();
 
-        const signals = ['SIGTERM', 'SIGINT'] as const;
-        signals.forEach(signal => {
+        const signals = ["SIGTERM", "SIGINT"] as const;
+        signals.forEach((signal) => {
             process.on(signal, async () => {
                 log.log(`[${signal}] received, closing App`);
 
-                await Promise.allSettled([
-                    nuxt.close(),
-                    app.close()
-                ])
+                await Promise.allSettled([nuxt.close(), app.close()]);
 
                 log.log(`[${signal}] App closed`);
 

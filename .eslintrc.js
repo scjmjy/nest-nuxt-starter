@@ -7,16 +7,15 @@ module.exports = {
         "eslint:recommended",
         "plugin:vue/recommended",
         "@vue/typescript/recommended",
-        // "@vue/prettier",
-        // "@vue/prettier/@typescript-eslint",
+        "@vue/prettier",
+        "@vue/prettier/@typescript-eslint",
     ],
     parserOptions: {
         ecmaVersion: 2020,
     },
-    globals: {
-        // BABYLON: true,
-    },
+    globals: {},
     rules: {
+        "prettier/prettier": ["off"], // TODO conflicts with vue/html-indent
         "vue/html-indent": [
             "error",
             4,
@@ -69,7 +68,7 @@ module.exports = {
             {
                 code: 120,
                 template: 1000,
-                ignorePattern: "class=\"",
+                ignorePattern: "",
                 ignoreUrls: true,
                 ignoreStrings: true,
                 // ignoreTemplateLiterals: true,

@@ -94,7 +94,9 @@
                         <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
                             The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. Just make sure you enable them first via JavaScript.
                         </p>
-                        <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a>
+                        <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" class="font-bold text-gray-800 mt-8">
+                            Check Tailwind Starter Kit!
+                        </a>
                     </div>
                     <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
@@ -146,7 +148,9 @@
                                 <li class="py-2">
                                     <div class="flex items-center">
                                         <div>
-                                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fas fa-fingerprint" /></span>
+                                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                                                <i class="fas fa-fingerprint" />
+                                            </span>
                                         </div>
                                         <div>
                                             <h4 class="text-gray-600">
@@ -172,7 +176,9 @@
                                 <li class="py-2">
                                     <div class="flex items-center">
                                         <div>
-                                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="far fa-paper-plane" /></span>
+                                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                                                <i class="far fa-paper-plane" />
+                                            </span>
                                         </div>
                                         <div>
                                             <h4 class="text-gray-600">
@@ -362,21 +368,27 @@
                                     Complete this form and we will get back to you in 24 hours.
                                 </p>
                                 <div class="relative w-full mb-3 mt-8">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full Name</label><input
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                                        Full Name
+                                    </label><input
                                         type="text"
                                         class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                         placeholder="Full Name"
                                         style="transition: all 0.15s ease 0s">
                                 </div>
                                 <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Email</label><input
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                                        Email
+                                    </label><input
                                         type="email"
                                         class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                         placeholder="Email"
                                         style="transition: all 0.15s ease 0s">
                                 </div>
                                 <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">Message</label><textarea rows="4" cols="80" class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full" placeholder="Type a message..." />
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                                        Message
+                                    </label><textarea rows="4" cols="80" class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full" placeholder="Type a message..." />
                                 </div>
                                 <div class="text-center mt-6">
                                     <button

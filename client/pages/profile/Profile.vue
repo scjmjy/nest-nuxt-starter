@@ -4,18 +4,15 @@
     <main class="profile">
         <section
             class="relative block"
-            style="height: 500px"
-        >
+            style="height: 500px">
             <div class="absolute top-0 w-full h-full bg-center bg-cover profile__bg">
                 <span
                     id="blackOverlay"
-                    class="w-full h-full absolute opacity-50 bg-black"
-                />
+                    class="w-full h-full absolute opacity-50 bg-black" />
             </div>
             <div
                 class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-                style="height: 70px"
-            >
+                style="height: 70px">
                 <svg
                     class="absolute bottom-0 overflow-hidden"
                     xmlns="http://www.w3.org/2000/svg"
@@ -23,12 +20,10 @@
                     version="1.1"
                     viewBox="0 0 2560 100"
                     x="0"
-                    y="0"
-                >
+                    y="0">
                     <polygon
                         class="text-gray-300 fill-current"
-                        points="2560 0 2560 100 0 100"
-                    />
+                        points="2560 0 2560 100 0 100" />
                 </svg>
             </div>
         </section>
@@ -46,8 +41,7 @@
                             shadow-xl
                             rounded-lg
                             -mt-64
-                        "
-                >
+                        ">
                     <div class="px-6">
                         <div class="flex flex-wrap justify-center">
                             <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
@@ -66,8 +60,7 @@
                                                 -ml-20
                                                 lg:-ml-16
                                             "
-                                        style="max-width: 150px"
-                                    >
+                                        style="max-width: 150px">
                                 </div>
                             </div>
                             <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
@@ -91,8 +84,7 @@
                                                 mb-1
                                             "
                                         type="button"
-                                        style="transition: all 0.15s ease 0s"
-                                    >
+                                        style="transition: all 0.15s ease 0s">
                                         Connect
                                     </button>
                                 </div>
@@ -101,18 +93,27 @@
                                 <div class="flex justify-center py-4 lg:pt-4 pt-8">
                                     <div class="mr-4 p-3 text-center">
                                         <span
-                                            class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                                        >22</span><span class="text-sm text-gray-500">Friends</span>
+                                            class="text-xl font-bold block uppercase tracking-wide text-gray-700">
+                                            22
+                                        </span><span class="text-sm text-gray-500">
+                                            Friends
+                                        </span>
                                     </div>
                                     <div class="mr-4 p-3 text-center">
                                         <span
-                                            class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                                        >10</span><span class="text-sm text-gray-500">Photos</span>
+                                            class="text-xl font-bold block uppercase tracking-wide text-gray-700">
+                                            10
+                                        </span><span class="text-sm text-gray-500">
+                                            Photos
+                                        </span>
                                     </div>
                                     <div class="lg:mr-4 p-3 text-center">
                                         <span
-                                            class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                                        >89</span><span class="text-sm text-gray-500">Comments</span>
+                                            class="text-xl font-bold block uppercase tracking-wide text-gray-700">
+                                            89
+                                        </span><span class="text-sm text-gray-500">
+                                            Comments
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -145,8 +146,9 @@
                                     </p>
                                     <a
                                         href="#pablo"
-                                        class="font-normal text-pink-500"
-                                    >Show more</a>
+                                        class="font-normal text-pink-500">
+                                        Show more
+                                    </a>
                                 </div>
                             </div>
                         </div>

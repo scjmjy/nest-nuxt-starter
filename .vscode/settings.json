@@ -2,6 +2,7 @@
     "vetur.format.defaultFormatter.js": "prettier-eslint",
     "vetur.format.defaultFormatter.stylus": "none",
     "vetur.format.defaultFormatter.ts": "prettier-tslint",
+    "vetur.format.defaultFormatter.sass": "none",
     "vetur.format.defaultFormatterOptions": {
         "prettier": {
             "printWidth": 250,
@@ -14,5 +15,5 @@
         "javascriptreact",
         "vue"
     ],
-    "vetur.format.defaultFormatter.sass": "none"
+    "scss.lint.unknownAtRules": "ignore"
 }

@@ -1,12 +1,12 @@
 <template>
-<div>
-    <h1>index</h1>
-    <ul class="user-list">
-        <li v-for="(user, i) in users" :key="i">
-            <span>{{ user.name }}</span>
-        </li>
-    </ul>
-</div>
+    <div>
+        <h1>index</h1>
+        <ul class="user-list">
+            <li v-for="(user, i) in users" :key="i">
+                <span>{{ user.name }}</span>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script lang="ts">

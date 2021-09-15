@@ -4,8 +4,7 @@
     <ul class="user-list">
         <li
             v-for="(user, i) in users"
-            :key="i"
-        >
+            :key="i">
             <span>{{ user.name }}</span>
         </li>
     </ul>

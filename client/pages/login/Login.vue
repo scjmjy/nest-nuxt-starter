@@ -64,7 +64,9 @@
                             font-bold
                             text-lg
                             border-2 border-white
-                        ">f</span>
+                        ">
+                    f
+                </span>
                 <span
                     class="
                             w-10
@@ -76,7 +78,9 @@
                             font-bold
                             text-lg
                             border-2 border-white
-                        ">G+</span>
+                        ">
+                    G+
+                </span>
                 <span
                     class="
                             w-10
@@ -88,7 +92,9 @@
                             font-bold
                             text-lg
                             border-2 border-white
-                        ">in</span>
+                        ">
+                    in
+                </span>
             </div>
             <p class="text-gray-100">
                 or use your account
@@ -121,7 +127,9 @@
                         maxlength="18">
                 </div>
                 <div class="text-right text-gray-400 hover:underline hover:text-gray-100">
-                    <a href="#">Forgot your password?</a>
+                    <a href="#">
+                        Forgot your password?
+                    </a>
                 </div>
                 <div class="px-4 pb-2 pt-4">
                     <button
